@@ -1,4 +1,3 @@
-"""모듈 1: 데이터 구조화(레코드) 및 파일 I/O (JSON, CSV, TXT, Pickle)"""
 import os
 import json
 import csv
@@ -31,7 +30,6 @@ def classify_bmi(bmi):
 
 
 class HealthInfo:
-    """건강정보 레코드"""
 
     def __init__(self, pid, name, birth_year, gender, height, weight, bmi=None, status=None):
         self.id = pid
@@ -63,7 +61,6 @@ class HealthInfo:
 
 
 class HealthInfoManager:
-    """건강정보관리자: 레코드 리스트 보관 + 파일 입출력"""
 
     def __init__(self, data_dir=DATA_DIR):
         self.records = []
